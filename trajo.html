@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trajo, calcul des frais de déplacement pour les professions libérales à domicile | MG Apps</title>
+<meta name="description" content="Trajo calcule automatiquement les distances et les frais de déplacement des professionnels libéraux qui exercent à domicile : santé, paramédical, coiffure. Abattement NGAP pour les soignants. 49 € par an.">
+<meta name="keywords" content="frais de déplacement, indemnité kilométrique, profession libérale, kinésithérapeute, podologue, pédicure, sage-femme, coiffeur à domicile, coiffeuse à domicile, soins à domicile, NGAP">
+<link rel="canonical" href="https://www.mgapps.fr/trajo">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MG Apps">
+<meta property="og:title" content="Trajo, calcul des frais de déplacement pour les professions libérales à domicile | MG Apps">
+<meta property="og:description" content="Trajo calcule automatiquement les distances et les frais de déplacement des professionnels libéraux qui exercent à domicile : santé, paramédical, coiffure. Abattement NGAP pour les soignants. 49 € par an.">
+<meta property="og:url" content="https://www.mgapps.fr/trajo">
+<meta property="og:image" content="https://www.mgapps.fr/img/trajo-1.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#101BA8">
+<style>:root{--nuit:#101BA8;--or:#FEBF1A;--encre:#0d1b4c;--gris:#5b6b8c;--fond:#f4f6fc;
+--carte:#fff;--trait:#e2e8f6;--accent:#101BA8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--encre);
+background:var(--fond);line-height:1.62}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);
+backdrop-filter:blur(8px);border-bottom:1px solid var(--trait)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:20px;color:var(--nuit)}
+.brand img{height:36px;width:auto}
+.top nav{display:flex;gap:26px;font-weight:600;font-size:15px}
+.top nav a{color:var(--gris)}.top nav a:hover{color:var(--nuit)}
+@media(max-width:640px){.top nav{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;
+padding:13px 24px;border-radius:12px;border:2px solid transparent;cursor:pointer;transition:.15s}
+.btn-or{background:var(--or);color:#3a2c00}.btn-or:hover{filter:brightness(1.06)}
+.btn-pri{background:var(--accent);color:#fff}.btn-pri:hover{filter:brightness(1.1)}
+.btn-clair{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.btn-clair:hover{background:rgba(255,255,255,.12)}
+.btn-sec{background:#fff;border-color:var(--trait);color:var(--nuit)}.btn-sec:hover{border-color:var(--accent)}
+/* hero accueil */
+.hero{position:relative;color:#fff;padding:96px 0 104px;overflow:hidden;
+background:linear-gradient(160deg,#0a1270 0%,#1a1f9e 55%,#101BA8 100%)}
+.hero .bg{position:absolute;inset:0;object-fit:cover;width:100%;height:100%;opacity:.16;z-index:0}
+.hero .wrap{position:relative;z-index:1}
+.hero .r{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);
+color:#fff;font-weight:700;font-size:13px;padding:6px 14px;border-radius:20px;margin-bottom:22px}
+.hero h1{font-size:46px;line-height:1.1;font-weight:900;letter-spacing:-.5px;max-width:17ch}
+.hero p{font-size:19px;color:#dfe3ff;margin-top:18px;max-width:60ch}
+.hero .cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+@media(max-width:640px){.hero h1{font-size:33px}}
+.sec{padding:70px 0}
+.sec>.wrap>h2{font-size:30px;font-weight:900;color:var(--nuit);text-align:center}
+.sec .sous{text-align:center;color:var(--gris);font-size:17px;margin-top:8px;margin-bottom:40px}
+.cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.carte{background:var(--carte);border:1px solid var(--trait);border-radius:18px;padding:30px;
+display:flex;flex-direction:column;transition:.18s;box-shadow:0 4px 20px rgba(16,27,168,.05)}
+.carte:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(16,27,168,.13);border-color:#c9d3f2}
+.carte .logo{height:50px;margin-bottom:16px}.carte .logo img{height:100%;width:auto}
+.carte h3{font-size:24px;color:var(--nuit);font-weight:800}
+.carte .acc{color:var(--gris);margin-top:6px;min-height:46px}
+.carte .desc{margin-top:14px;font-size:15px;flex:1 1 auto}
+.carte .pied{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.tag{font-weight:800;color:var(--nuit);font-size:16px}
+.tag small{display:block;font-weight:600;color:var(--gris);font-size:12px}
+.fleche{background:var(--nuit);color:#fff;font-weight:700;font-size:15px;padding:10px 18px;border-radius:10px}
+.pourquoi{background:#fff;border-top:1px solid var(--trait);border-bottom:1px solid var(--trait)}
+.pourquoi .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+.pourquoi h4{color:var(--nuit);font-size:18px;margin-bottom:6px}
+.pourquoi p{color:var(--gris);font-size:15px}.pourquoi .ic{font-size:26px;margin-bottom:10px}
+.contact .box{background:linear-gradient(160deg,var(--nuit),#2a2496);color:#fff;
+border-radius:20px;padding:48px 30px;text-align:center}
+.contact h2{color:#fff}.contact p{color:#dfe3ff;margin:12px auto 26px;max-width:52ch}
+.contact .liens{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.btn-fb{display:inline-flex;align-items:center;gap:9px;background:#1877F2;color:#fff;font-weight:700;
+font-size:16px;padding:13px 22px;border-radius:12px;border:2px solid transparent;transition:.15s}
+.btn-fb:hover{filter:brightness(1.08)}.btn-fb svg{flex:0 0 auto}
+footer.bas{padding:34px 0;color:var(--gris);font-size:14px;text-align:center;border-top:1px solid var(--trait)}
+footer.bas b{color:var(--nuit)}footer.bas a{color:var(--nuit)}
+/* page produit */
+.tete{padding:56px 0 40px}
+.tete .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+@media(max-width:820px){.tete .wrap{grid-template-columns:1fr;gap:26px}}
+.tete .logo{height:58px;margin-bottom:16px}.tete .logo img{height:100%;width:auto}
+.tete h1{font-size:38px;font-weight:900;color:var(--accent);letter-spacing:-.5px}
+.tete .acc{font-size:20px;color:var(--gris);margin-top:10px}
+.tete .pour{display:inline-block;margin-top:16px;background:#eef1fc;color:var(--nuit);
+font-weight:700;font-size:14px;padding:6px 14px;border-radius:20px}
+.statut{display:inline-block;background:var(--or);color:#3a2c00;font-weight:800;font-size:12px;
+padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
+.carte .statut{margin:0 0 10px}
+.tete .desc{margin-top:18px;font-size:17px;max-width:54ch}
+.tete .aussi{margin-top:12px;font-size:14px;color:var(--gris);font-style:italic;max-width:56ch}
+.tete .cta{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.prix{font-weight:800;color:var(--accent);font-size:18px}.prix small{font-weight:600;color:var(--gris)}
+.carrousel{position:relative;background:#fff;border:1px solid var(--trait);border-radius:20px;
+overflow:hidden;box-shadow:0 10px 30px rgba(16,27,168,.08)}
+.carrousel.portrait{max-width:320px;margin-left:auto;margin-right:auto}
+.piste{display:flex;transition:transform .4s ease}
+.slide{min-width:100%;position:relative;background:#eef1fc}
+.carrousel.paysage .slide{aspect-ratio:16/9}
+.carrousel.portrait .slide{aspect-ratio:9/20}
+.slide img{width:100%;height:100%;object-fit:contain}
+.slide .vide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+flex-direction:column;color:var(--gris);font-size:15px;text-align:center;padding:20px}
+.slide .vide b{color:var(--nuit);font-size:17px;margin-bottom:4px}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;
+background:rgba(255,255,255,.92);border:1px solid var(--trait);cursor:pointer;font-size:20px;color:var(--nuit);
+display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.nav:hover{background:#fff}.nav.g{left:12px}.nav.d{right:12px}
+.puces{position:absolute;bottom:14px;left:0;right:0;display:flex;gap:8px;justify-content:center}
+.puce{width:9px;height:9px;border-radius:50%;background:rgba(16,27,168,.25);cursor:pointer;transition:.2s}
+.puce.on{background:var(--accent);width:24px;border-radius:5px}
+.forts{padding:16px 0 60px}.forts h2{font-size:26px;color:var(--accent);font-weight:800;
+margin-bottom:24px;text-align:center}
+.liste{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;max-width:860px;margin:0 auto}
+.pt{background:#fff;border:1px solid var(--trait);border-radius:14px;padding:16px 20px;display:flex;gap:12px}
+.pt .ck{color:var(--or);font-weight:900;font-size:18px}
+.faq{background:#fff;border-top:1px solid var(--trait);padding:60px 0}
+.faq h2{font-size:26px;color:var(--accent);font-weight:800;text-align:center;margin-bottom:30px}
+.qa{max-width:800px;margin:0 auto}
+.qa details{border:1px solid var(--trait);border-radius:12px;margin-bottom:12px;overflow:hidden;background:#fff}
+.qa summary{padding:16px 20px;font-weight:700;color:var(--nuit);cursor:pointer;list-style:none;
+display:flex;justify-content:space-between;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";color:var(--or);font-size:22px;font-weight:900}
+.qa details[open] summary::after{content:"-"}
+.qa .rep{padding:0 20px 18px;color:var(--encre)}
+.final{padding:20px 0 76px}.final .box{background:linear-gradient(160deg,var(--accent),#2a2496);
+color:#fff;border-radius:20px;padding:44px 30px;text-align:center}
+.final h2{color:#fff;font-size:26px}.final p{color:#dfe3ff;margin:12px auto 24px;max-width:48ch}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "MG Apps", "url": "https://www.mgapps.fr/", "logo": "https://www.mgapps.fr/img/mgapps-logo-officiel.png", "email": "contact@mgapps.fr", "telephone": "06 32 93 10 17", "founder": {"@type": "Person", "name": "Jerome Gruet"}, "address": {"@type": "PostalAddress", "streetAddress": "44 avenue Edouard Herriot", "postalCode": "21400", "addressLocality": "Chatillon-sur-Seine", "addressCountry": "FR"}, "description": "MG Apps conçoit des logiciels métier simples, nés dans une vraie entreprise du bâtiment. Chaque application résout un problème concret du terrain, s'utilise depuis un téléphone comme depuis un ordinateur, et garde vos données isolées et hébergées en Europe.", "sameAs": ["https://www.facebook.com/profile.php?id=61591131750401"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Trajo", "applicationCategory": "BusinessApplication", "operatingSystem": "Web, iOS, Android", "url": "https://www.mgapps.fr/trajo", "description": "Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client, et vous évite de perdre de l'argent sur vos frais de route. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP.", "offers": {"@type": "Offer", "price": "49", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}, "publisher": {"@type": "Organization", "name": "MG Apps"}, "audience": {"@type": "Audience", "audienceType": "Professionnels libéraux qui exercent au domicile de leurs clients"}, "keywords": "frais de déplacement, indemnité kilométrique, profession libérale, kinésithérapeute, podologue, pédicure, sage-femme, coiffeur à domicile, coiffeuse à domicile, soins à domicile, NGAP"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Pour qui est fait Trajo ?", "acceptedAnswer": {"@type": "Answer", "text": "Trajo s'adresse aux praticiens de santé et aux paramédicaux libéraux qui se déplacent au domicile des patients et veulent calculer justement leurs indemnités de déplacement."}}, {"@type": "Question", "name": "Comment Trajo calcule-t-il les frais de déplacement ?", "acceptedAnswer": {"@type": "Answer", "text": "Trajo mesure automatiquement les distances entre vos visites et en déduit le montant à facturer. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP."}}, {"@type": "Question", "name": "Trajo traite-t-il des données de santé ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Trajo ne manipule que des adresses et des distances. Aucune donnée patient ni donnée de santé n'est saisie ni conservée."}}, {"@type": "Question", "name": "Combien coûte Trajo ?", "acceptedAnswer": {"@type": "Answer", "text": "Trajo coûte 49 € par an, tout compris, sans engagement caché."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.mgapps.fr/"}, {"@type": "ListItem", "position": 2, "name": "Trajo", "item": "https://www.mgapps.fr/trajo"}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="img/mgapps-logo-officiel.png" alt="MG Apps" onerror="this.style.display='none'">MG Apps</a>
+  <nav><a href="index.html#produits">Produits</a><a href="index.html#pourquoi">Pourquoi MG Apps</a><a href="index.html#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<section class="tete"><div class="wrap">
+  <div>
+    <div class="logo"><img src="img/logo-trajo.svg" alt="Trajo" onerror="this.parentNode.style.display='none'"></div>
+    <h1>Trajo</h1>
+    <p class="acc">Le calcul des frais de déplacement, enfin juste et automatique</p>
+    <p class="pour">Professionnels libéraux qui exercent au domicile de leurs clients</p>
+    <p class="desc">Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client, et vous évite de perdre de l&#x27;argent sur vos frais de route. Pour les professionnels de santé, il applique en plus l&#x27;abattement des deux premiers kilomètres prévu par la NGAP.</p>
+    <p class="aussi">Kinésithérapeutes, podologues, pédicures, sage-femmes, et jusqu&#x27;aux coiffeurs et coiffeuses à domicile : toute profession libérale qui se déplace chez ses clients.</p>
+    <div class="cta"><a class="btn btn-pri" href="https://trajo.pages.dev" target="_blank" rel="noopener">Je m&#x27;abonne &rarr;</a><span class="prix">49 € par an</span></div>
+  </div>
+  <div class="carrousel portrait"><div class="piste"><div class="slide"><img src="img/trajo-1.png" alt="Trajo, écran 1" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="vide" style="display:none"><b>Capture à venir</b>Écran 1 de Trajo</div></div><div class="slide"><img src="img/trajo-2.png" alt="Trajo, écran 2" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="vide" style="display:none"><b>Capture à venir</b>Écran 2 de Trajo</div></div><div class="slide"><img src="img/trajo-3.png" alt="Trajo, écran 3" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="vide" style="display:none"><b>Capture à venir</b>Écran 3 de Trajo</div></div><div class="slide"><img src="img/trajo-4.png" alt="Trajo, écran 4" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="vide" style="display:none"><b>Capture à venir</b>Écran 4 de Trajo</div></div></div><button class="nav g" aria-label="Précédent">&#8249;</button><button class="nav d" aria-label="Suivant">&#8250;</button><div class="puces"><span class="puce on" data-i="0"></span><span class="puce" data-i="1"></span><span class="puce" data-i="2"></span><span class="puce" data-i="3"></span></div></div>
+</div></section>
+
+<section class="forts"><div class="wrap">
+  <h2>Ce que fait Trajo</h2><div class="liste"><div class="pt"><span class="ck">&#10003;</span><span>Calcul automatique des distances de déplacement</span></div><div class="pt"><span class="ck">&#10003;</span><span>Montant à facturer calculé pour chaque visite</span></div><div class="pt"><span class="ck">&#10003;</span><span>Pour la santé : abattement des 2 km selon la NGAP</span></div><div class="pt"><span class="ck">&#10003;</span><span>S&#x27;installe sur le téléphone et marche sans réseau</span></div><div class="pt"><span class="ck">&#10003;</span><span>Aucune donnée sensible, aucune donnée de santé</span></div><div class="pt"><span class="ck">&#10003;</span><span>49 € par an, tout compris</span></div></div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+  <h2>Questions fréquentes sur Trajo</h2><div class="qa"><details><summary>Pour qui est fait Trajo ?</summary><div class="rep">Trajo s&#x27;adresse aux praticiens de santé et aux paramédicaux libéraux qui se déplacent au domicile des patients et veulent calculer justement leurs indemnités de déplacement.</div></details><details><summary>Comment Trajo calcule-t-il les frais de déplacement ?</summary><div class="rep">Trajo mesure automatiquement les distances entre vos visites et en déduit le montant à facturer. Pour les professionnels de santé, il applique en plus l&#x27;abattement des deux premiers kilomètres prévu par la NGAP.</div></details><details><summary>Trajo traite-t-il des données de santé ?</summary><div class="rep">Non. Trajo ne manipule que des adresses et des distances. Aucune donnée patient ni donnée de santé n&#x27;est saisie ni conservée.</div></details><details><summary>Combien coûte Trajo ?</summary><div class="rep">Trajo coûte 49 € par an, tout compris, sans engagement caché.</div></details></div>
+</div></section>
+
+<section class="final"><div class="wrap"><div class="box">
+  <h2>Envie d'en savoir plus sur Trajo ?</h2>
+  <p>Une démonstration, un devis, une question : on vous répond vite et sans jargon.</p>
+  <a class="btn btn-or" href="mailto:contact@mgapps.fr?subject=Demande%20-%20Trajo">contact@mgapps.fr</a>
+</div></div></section>
+</main>
+<script>
+(function(){var pi=document.querySelector('.piste'),ps=document.querySelectorAll('.puce'),
+n=4,pos=0;function m(i){pos=(i+n)%n;pi.style.transform='translateX(-'+(pos*100)+'%)';
+ps.forEach(function(x,k){x.classList.toggle('on',k===pos)})}
+document.querySelector('.nav.g').onclick=function(){m(pos-1)};
+document.querySelector('.nav.d').onclick=function(){m(pos+1)};
+ps.forEach(function(x){x.onclick=function(){m(+x.dataset.i)}});
+setInterval(function(){m(pos+1)},6000);})();
+</script>
+<footer class="bas"><div class="wrap">
+  <b>MG Apps</b> - Editeur de logiciels - 44 avenue Edouard Herriot, 21400 Chatillon-sur-Seine, France<br>
+  <a href="mailto:contact@mgapps.fr">contact@mgapps.fr</a> - SIRET 501 976 740 00040 - <a href="https://www.facebook.com/profile.php?id=61591131750401" target="_blank" rel="noopener">Facebook</a>
+</div></footer>
+</body>
+</html>

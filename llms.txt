@@ -1,0 +1,40 @@
+# MG Apps
+
+> MG Apps conçoit des logiciels métier simples, nés dans une vraie entreprise du bâtiment. Chaque application résout un problème concret du terrain, s'utilise depuis un téléphone comme depuis un ordinateur, et garde vos données isolées et hébergées en Europe.
+
+MG Apps est un éditeur de logiciels français basé à Chatillon-sur-Seine, fondé par Jerome Gruet. Contact : contact@mgapps.fr.
+
+## Produits
+
+### Vigo
+- Pour : Menuisiers, artisans et entreprises du bâtiment
+- Ce que c'est : Le logiciel de gestion et de pilotage pour les professionnels du bâtiment
+- Prix : À partir de 129 € par mois
+- Page : https://www.mgapps.fr/vigo
+- Vigo réunit dans un seul outil tout ce qui fait tourner une entreprise du bâtiment : les clients, les devis, les chantiers, le planning et les heures des équipes. Ne s'active que ce qui sert, module par module, et tout se retrouve relié de bout en bout.
+
+- Concerne aussi : Pensé pour les menuisiers, charpentiers, électriciens, plombiers chauffagistes et toutes les entreprises du bâtiment, adhérentes CAPEB ou FFB.
+- Mots-clés : logiciel bâtiment, gestion entreprise du bâtiment, artisan, menuisier, charpentier, électricien, plombier chauffagiste, devis de chantier, CAPEB, FFB, comptable, cabinet comptable
+
+Questions fréquentes :
+- À qui s'adresse Vigo ? Vigo est conçu pour les menuisiers, les artisans et les petites entreprises du bâtiment qui veulent gérer devis, chantiers, planning et heures sans multiplier les outils.
+- Combien coûte Vigo ? L'abonnement démarre à 129 € par mois pour le socle et trois utilisateurs. Des modules optionnels (documents, communication, stock, pilotage, interventions, assistant IA, pôle RH) s'ajoutent à la carte.
+- Faut-il installer un logiciel ? Non. Vigo s'utilise depuis un navigateur, sur ordinateur, tablette et téléphone, et fonctionne même sans connexion pour les fonctions de terrain. Rien à installer.
+- Où sont hébergées les données ? Chaque entreprise cliente dispose d'une base de données isolée, hébergée en Europe. Les données ne sont ni vendues, ni mélangées avec celles d'un autre client.
+- Vigo remplace-t-il un logiciel de paye ou de comptabilité ? Non. Vigo prépare les heures et les éléments variables, et se relie à la comptabilité, mais l'établissement des bulletins de paye reste fait par l'entreprise ou son expert-comptable.
+
+### Trajo
+- Pour : Professionnels libéraux qui exercent au domicile de leurs clients
+- Ce que c'est : Le calcul des frais de déplacement, enfin juste et automatique
+- Prix : 49 € par an
+- Page : https://www.mgapps.fr/trajo
+- Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client, et vous évite de perdre de l'argent sur vos frais de route. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP.
+
+- Concerne aussi : Kinésithérapeutes, podologues, pédicures, sage-femmes, et jusqu'aux coiffeurs et coiffeuses à domicile : toute profession libérale qui se déplace chez ses clients.
+- Mots-clés : frais de déplacement, indemnité kilométrique, profession libérale, kinésithérapeute, podologue, pédicure, sage-femme, coiffeur à domicile, coiffeuse à domicile, soins à domicile, NGAP
+
+Questions fréquentes :
+- Pour qui est fait Trajo ? Trajo s'adresse aux praticiens de santé et aux paramédicaux libéraux qui se déplacent au domicile des patients et veulent calculer justement leurs indemnités de déplacement.
+- Comment Trajo calcule-t-il les frais de déplacement ? Trajo mesure automatiquement les distances entre vos visites et en déduit le montant à facturer. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP.
+- Trajo traite-t-il des données de santé ? Non. Trajo ne manipule que des adresses et des distances. Aucune donnée patient ni donnée de santé n'est saisie ni conservée.
+- Combien coûte Trajo ? Trajo coûte 49 € par an, tout compris, sans engagement caché.

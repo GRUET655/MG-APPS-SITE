@@ -1,0 +1,114 @@
+{
+  "societe": {
+    "nom": "MG Apps",
+    "baseline": "Des logiciels de gestion et de pilotage pensés pour les pros du terrain",
+    "domaine": "https://www.mgapps.fr",
+    "email": "contact@mgapps.fr",
+    "telephone": "06 32 93 10 17",
+    "adresse": "44 avenue Edouard Herriot, 21400 Chatillon-sur-Seine, France",
+    "siret": "501 976 740 00040",
+    "fondateur": "Jerome Gruet",
+    "facebook": "https://www.facebook.com/profile.php?id=61591131750401",
+    "pitch": "MG Apps conçoit des logiciels métier simples, nés dans une vraie entreprise du bâtiment. Chaque application résout un problème concret du terrain, s'utilise depuis un téléphone comme depuis un ordinateur, et garde vos données isolées et hébergées en Europe.",
+    "botsIA": ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Web", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Bytespider", "Meta-ExternalAgent"]
+  },
+
+  "produits": [
+    {
+      "id": "vigo",
+      "nom": "Vigo",
+      "actif": true,
+      "logo": "img/logo-vigo.png",
+      "accroche": "Le logiciel de gestion et de pilotage pour les professionnels du bâtiment",
+      "categorie": "Logiciel de gestion pour le bâtiment",
+      "pour": "Menuisiers, artisans et entreprises du bâtiment",
+      "aussiPour": "Pensé pour les menuisiers, charpentiers, électriciens, plombiers chauffagistes et toutes les entreprises du bâtiment, adhérentes CAPEB ou FFB.",
+      "motsCles": ["logiciel bâtiment", "gestion entreprise du bâtiment", "artisan", "menuisier", "charpentier", "électricien", "plombier chauffagiste", "devis de chantier", "CAPEB", "FFB", "comptable", "cabinet comptable"],
+      "tarif": "À partir de 129 € par mois",
+      "prixValeur": "129",
+      "statut": "Lancement prochain",
+      "lienAppli": "",
+      "texteBouton": "Demander une démonstration",
+      "seoTitle": "Vigo, logiciel de gestion et de pilotage pour le bâtiment | MG Apps",
+      "seoDesc": "Vigo réunit devis, chantiers, planning, heures et pilotage de la marge dans un seul logiciel simple, pensé pour les menuisiers et les artisans du bâtiment. À partir de 129 € par mois.",
+      "description": "Vigo réunit dans un seul outil tout ce qui fait tourner une entreprise du bâtiment : les clients, les devis, les chantiers, le planning et les heures des équipes. Ne s'active que ce qui sert, module par module, et tout se retrouve relié de bout en bout.",
+      "points": [
+        "Clients, devis et chantiers reliés de bout en bout",
+        "Planning des équipes de fabrication et de pose",
+        "Heures des salariés et préparation de la paye",
+        "Interventions après-vente, du signalement à la signature",
+        "Pilotage : savoir si on gagne de l'argent, chantier par chantier",
+        "Fonctionne sur ordinateur, tablette et téléphone, sans installation"
+      ],
+      "faq": [
+        {
+          "q": "À qui s'adresse Vigo ?",
+          "a": "Vigo est conçu pour les menuisiers, les artisans et les petites entreprises du bâtiment qui veulent gérer devis, chantiers, planning et heures sans multiplier les outils."
+        },
+        {
+          "q": "Combien coûte Vigo ?",
+          "a": "L'abonnement démarre à 129 € par mois pour le socle et trois utilisateurs. Des modules optionnels (documents, communication, stock, pilotage, interventions, assistant IA, pôle RH) s'ajoutent à la carte."
+        },
+        {
+          "q": "Faut-il installer un logiciel ?",
+          "a": "Non. Vigo s'utilise depuis un navigateur, sur ordinateur, tablette et téléphone, et fonctionne même sans connexion pour les fonctions de terrain. Rien à installer."
+        },
+        {
+          "q": "Où sont hébergées les données ?",
+          "a": "Chaque entreprise cliente dispose d'une base de données isolée, hébergée en Europe. Les données ne sont ni vendues, ni mélangées avec celles d'un autre client."
+        },
+        {
+          "q": "Vigo remplace-t-il un logiciel de paye ou de comptabilité ?",
+          "a": "Non. Vigo prépare les heures et les éléments variables, et se relie à la comptabilité, mais l'établissement des bulletins de paye reste fait par l'entreprise ou son expert-comptable."
+        }
+      ],
+      "captures": ["img/vigo-1.jpg", "img/vigo-2.jpg", "img/vigo-3.jpg", "img/vigo-4.jpg"]
+    },
+
+    {
+      "id": "trajo",
+      "nom": "Trajo",
+      "actif": true,
+      "logo": "img/logo-trajo.svg",
+      "accroche": "Le calcul des frais de déplacement, enfin juste et automatique",
+      "categorie": "Calculateur de frais de déplacement pour les professions à domicile",
+      "pour": "Professionnels libéraux qui exercent au domicile de leurs clients",
+      "aussiPour": "Kinésithérapeutes, podologues, pédicures, sage-femmes, et jusqu'aux coiffeurs et coiffeuses à domicile : toute profession libérale qui se déplace chez ses clients.",
+      "motsCles": ["frais de déplacement", "indemnité kilométrique", "profession libérale", "kinésithérapeute", "podologue", "pédicure", "sage-femme", "coiffeur à domicile", "coiffeuse à domicile", "soins à domicile", "NGAP"],
+      "tarif": "49 € par an",
+      "prixValeur": "49",
+      "lienAppli": "https://trajo.pages.dev",
+      "texteBouton": "Je m'abonne",
+      "seoTitle": "Trajo, calcul des frais de déplacement pour les professions libérales à domicile | MG Apps",
+      "seoDesc": "Trajo calcule automatiquement les distances et les frais de déplacement des professionnels libéraux qui exercent à domicile : santé, paramédical, coiffure. Abattement NGAP pour les soignants. 49 € par an.",
+      "description": "Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client, et vous évite de perdre de l'argent sur vos frais de route. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP.",
+      "points": [
+        "Calcul automatique des distances de déplacement",
+        "Montant à facturer calculé pour chaque visite",
+        "Pour la santé : abattement des 2 km selon la NGAP",
+        "S'installe sur le téléphone et marche sans réseau",
+        "Aucune donnée sensible, aucune donnée de santé",
+        "49 € par an, tout compris"
+      ],
+      "faq": [
+        {
+          "q": "Pour qui est fait Trajo ?",
+          "a": "Trajo s'adresse aux praticiens de santé et aux paramédicaux libéraux qui se déplacent au domicile des patients et veulent calculer justement leurs indemnités de déplacement."
+        },
+        {
+          "q": "Comment Trajo calcule-t-il les frais de déplacement ?",
+          "a": "Trajo mesure automatiquement les distances entre vos visites et en déduit le montant à facturer. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP."
+        },
+        {
+          "q": "Trajo traite-t-il des données de santé ?",
+          "a": "Non. Trajo ne manipule que des adresses et des distances. Aucune donnée patient ni donnée de santé n'est saisie ni conservée."
+        },
+        {
+          "q": "Combien coûte Trajo ?",
+          "a": "Trajo coûte 49 € par an, tout compris, sans engagement caché."
+        }
+      ],
+      "captures": ["img/trajo-1.png", "img/trajo-2.png", "img/trajo-3.png", "img/trajo-4.png"]
+    }
+  ]
+}

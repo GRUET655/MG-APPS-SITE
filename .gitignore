@@ -1,0 +1,7 @@
+# Site public MG Apps - depot separe de l'espace interne
+# On NE publie PAS les originaux de captures (barres de fenetre) ni le systeme
+img/_originaux/
+_originaux/
+Thumbs.db
+desktop.ini
+.DS_Store
