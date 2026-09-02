@@ -24,17 +24,17 @@ Questions fréquentes :
 - Vigo remplace-t-il un logiciel de paye ou de comptabilité ? Non. Vigo prépare les heures et les éléments variables, et se relie à la comptabilité, mais l'établissement des bulletins de paye reste fait par l'entreprise ou son expert-comptable.
 
 ### Trajo
-- Pour : Professionnels libéraux qui exercent au domicile de leurs clients
+- Pour : Professionnels libéraux en honoraires libres qui se déplacent au domicile de leurs clients
 - Ce que c'est : Le calcul des frais de déplacement, enfin juste et automatique
 - Prix : 49 € par an
 - Page : https://www.mgapps.fr/trajo
-- Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client, et vous évite de perdre de l'argent sur vos frais de route. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP.
+- Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client : il mesure la distance réelle par la route et en déduit le montant à facturer selon vos propres tarifs. De quoi ne plus perdre d'argent sur vos frais de route.
 
-- Concerne aussi : Kinésithérapeutes, podologues, pédicures, sage-femmes, et jusqu'aux coiffeurs et coiffeuses à domicile : toute profession libérale qui se déplace chez ses clients.
-- Mots-clés : frais de déplacement, indemnité kilométrique, profession libérale, kinésithérapeute, podologue, pédicure, sage-femme, coiffeur à domicile, coiffeuse à domicile, soins à domicile, NGAP
+- Concerne aussi : Pédicures-podologues, coiffeurs et coiffeuses à domicile, et toute profession libérale qui fixe librement ses honoraires et se déplace chez ses clients.
+- Mots-clés : frais de déplacement, indemnité kilométrique, profession libérale, honoraires libres, pédicure-podologue, podologue, pédicure, coiffeur à domicile, coiffeuse à domicile
 
 Questions fréquentes :
-- Pour qui est fait Trajo ? Trajo s'adresse aux praticiens de santé et aux paramédicaux libéraux qui se déplacent au domicile des patients et veulent calculer justement leurs indemnités de déplacement.
-- Comment Trajo calcule-t-il les frais de déplacement ? Trajo mesure automatiquement les distances entre vos visites et en déduit le montant à facturer. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP.
+- Pour qui est fait Trajo ? Trajo s'adresse aux professionnels libéraux en honoraires libres qui se déplacent au domicile de leurs clients, comme les pédicures-podologues ou les coiffeurs à domicile, et veulent calculer justement leurs frais de déplacement.
+- Comment Trajo calcule-t-il les frais de déplacement ? Trajo mesure automatiquement la distance réelle par la route entre votre point de départ et chaque visite, puis en déduit le montant à facturer selon vos propres tarifs : frais au kilomètre, forfait et visite.
 - Trajo traite-t-il des données de santé ? Non. Trajo ne manipule que des adresses et des distances. Aucune donnée patient ni donnée de santé n'est saisie ni conservée.
 - Combien coûte Trajo ? Trajo coûte 49 € par an, tout compris, sans engagement caché.

@@ -1,0 +1,5 @@
+# Empeche le telechargement des fichiers de fabrication publies par erreur
+# (le repertoire publie est la racine du depot). On renvoie vers l'accueil.
+/generer.py    /    302
+/_data/*       /    302
+/.gitignore    /    302

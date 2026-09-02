@@ -1,0 +1,11 @@
+# En-tetes de securite du site public MG Apps (appliques par Cloudflare Pages).
+# Site 100% statique, aucune donnee, aucune connexion : tout est en 'self'.
+# 'unsafe-inline' est tolere ici (petits scripts/styles en ligne, aucune
+# saisie utilisateur donc surface XSS quasi nulle).
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'

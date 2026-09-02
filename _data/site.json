@@ -72,20 +72,20 @@
       "logo": "img/logo-trajo.svg",
       "accroche": "Le calcul des frais de déplacement, enfin juste et automatique",
       "categorie": "Calculateur de frais de déplacement pour les professions à domicile",
-      "pour": "Professionnels libéraux qui exercent au domicile de leurs clients",
-      "aussiPour": "Kinésithérapeutes, podologues, pédicures, sage-femmes, et jusqu'aux coiffeurs et coiffeuses à domicile : toute profession libérale qui se déplace chez ses clients.",
-      "motsCles": ["frais de déplacement", "indemnité kilométrique", "profession libérale", "kinésithérapeute", "podologue", "pédicure", "sage-femme", "coiffeur à domicile", "coiffeuse à domicile", "soins à domicile", "NGAP"],
+      "pour": "Professionnels libéraux en honoraires libres qui se déplacent au domicile de leurs clients",
+      "aussiPour": "Pédicures-podologues, coiffeurs et coiffeuses à domicile, et toute profession libérale qui fixe librement ses honoraires et se déplace chez ses clients.",
+      "motsCles": ["frais de déplacement", "indemnité kilométrique", "profession libérale", "honoraires libres", "pédicure-podologue", "podologue", "pédicure", "coiffeur à domicile", "coiffeuse à domicile"],
       "tarif": "49 € par an",
       "prixValeur": "49",
       "lienAppli": "https://trajo.pages.dev",
       "texteBouton": "Je m'abonne",
       "seoTitle": "Trajo, calcul des frais de déplacement pour les professions libérales à domicile | MG Apps",
-      "seoDesc": "Trajo calcule automatiquement les distances et les frais de déplacement des professionnels libéraux qui exercent à domicile : santé, paramédical, coiffure. Abattement NGAP pour les soignants. 49 € par an.",
-      "description": "Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client, et vous évite de perdre de l'argent sur vos frais de route. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP.",
+      "seoDesc": "Trajo calcule automatiquement la distance réelle par la route et les frais de déplacement des professionnels libéraux en honoraires libres qui exercent à domicile : pédicures-podologues, coiffure à domicile. 49 € par an.",
+      "description": "Aucun logiciel métier ne calcule vraiment les distances des déplacements. Trajo le fait à votre place, à chaque visite chez un client : il mesure la distance réelle par la route et en déduit le montant à facturer selon vos propres tarifs. De quoi ne plus perdre d'argent sur vos frais de route.",
       "points": [
         "Calcul automatique des distances de déplacement",
         "Montant à facturer calculé pour chaque visite",
-        "Pour la santé : abattement des 2 km selon la NGAP",
+        "Distance réelle par la route, tarifs entièrement réglables",
         "S'installe sur le téléphone et marche sans réseau",
         "Aucune donnée sensible, aucune donnée de santé",
         "49 € par an, tout compris"
@@ -93,11 +93,11 @@
       "faq": [
         {
           "q": "Pour qui est fait Trajo ?",
-          "a": "Trajo s'adresse aux praticiens de santé et aux paramédicaux libéraux qui se déplacent au domicile des patients et veulent calculer justement leurs indemnités de déplacement."
+          "a": "Trajo s'adresse aux professionnels libéraux en honoraires libres qui se déplacent au domicile de leurs clients, comme les pédicures-podologues ou les coiffeurs à domicile, et veulent calculer justement leurs frais de déplacement."
         },
         {
           "q": "Comment Trajo calcule-t-il les frais de déplacement ?",
-          "a": "Trajo mesure automatiquement les distances entre vos visites et en déduit le montant à facturer. Pour les professionnels de santé, il applique en plus l'abattement des deux premiers kilomètres prévu par la NGAP."
+          "a": "Trajo mesure automatiquement la distance réelle par la route entre votre point de départ et chaque visite, puis en déduit le montant à facturer selon vos propres tarifs : frais au kilomètre, forfait et visite."
         },
         {
           "q": "Trajo traite-t-il des données de santé ?",
