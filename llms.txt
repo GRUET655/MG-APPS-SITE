@@ -11,16 +11,19 @@ MG Apps est un éditeur de logiciels français basé à Chatillon-sur-Seine, fon
 - Ce que c'est : Le logiciel de gestion et de pilotage pour les professionnels du bâtiment
 - Prix : À partir de 129 € par mois
 - Page : https://www.mgapps.fr/vigo
-- Vigo réunit dans un seul outil tout ce qui fait tourner une entreprise du bâtiment : les clients, les devis, les chantiers, le planning et les heures des équipes. Ne s'active que ce qui sert, module par module, et tout se retrouve relié de bout en bout.
+- Vigo réunit dans un seul outil ce qui fait tourner une entreprise du bâtiment : les clients, les chantiers, le planning, les heures des équipes et le pilotage de la marge. Il se relie à votre logiciel de devis et de facturation au lieu de le remplacer, et ne s'active que ce qui sert, module par module.
 
 - Concerne aussi : Pensé pour les menuisiers, charpentiers, électriciens, plombiers chauffagistes et toutes les entreprises du bâtiment, adhérentes CAPEB ou FFB.
 - Mots-clés : logiciel bâtiment, gestion entreprise du bâtiment, artisan, menuisier, charpentier, électricien, plombier chauffagiste, devis de chantier, CAPEB, FFB, comptable, cabinet comptable
 
 Questions fréquentes :
-- À qui s'adresse Vigo ? Vigo est conçu pour les menuisiers, les artisans et les petites entreprises du bâtiment qui veulent gérer devis, chantiers, planning et heures sans multiplier les outils.
-- Combien coûte Vigo ? L'abonnement démarre à 129 € par mois pour le socle et trois utilisateurs. Des modules optionnels (documents, communication, stock, pilotage, interventions, assistant IA, pôle RH) s'ajoutent à la carte.
-- Faut-il installer un logiciel ? Non. Vigo s'utilise depuis un navigateur, sur ordinateur, tablette et téléphone, et fonctionne même sans connexion pour les fonctions de terrain. Rien à installer.
-- Où sont hébergées les données ? Chaque entreprise cliente dispose d'une base de données isolée, hébergée en Europe. Les données ne sont ni vendues, ni mélangées avec celles d'un autre client.
+- À qui s'adresse Vigo ? Vigo est conçu pour les menuisiers, les artisans et les petites entreprises du bâtiment qui veulent suivre leurs chantiers, leur planning, leurs heures et leur rentabilité sans multiplier les outils.
+- Vigo fait-il les devis et les factures ? Non. Vigo se relie à votre logiciel de devis et de facturation et en reprend les chiffres pour suivre la rentabilité. Vous gardez votre outil habituel, Vigo fait le lien avec le terrain.
+- Combien coûte Vigo ? Le socle démarre à 129 € HT par mois avec trois utilisateurs, avec engagement annuel (149 € sans engagement). Des modules s'ajoutent à la carte. Le détail est dans la grille de tarifs de cette page.
+- Faut-il installer un logiciel ? Non. Vigo s'utilise depuis un navigateur, sur ordinateur, tablette et téléphone. Certaines fonctions de consultation restent disponibles sans connexion.
+- Où sont hébergées mes données, et sont-elles protégées ? Chaque entreprise dispose d'une base de données isolée, hébergée en Europe, avec des droits d'accès par rôle et un historique des actions. Les données ne sont ni vendues ni mélangées avec celles d'un autre client.
+- Comment se passe la mise en service ? Nous reprenons vos clients et vos chantiers, paramétrons Vigo à votre façon et formons vos équipes. Une mise en route accompagnée est facturée une fois, selon l'ampleur de la reprise.
+- L'assistant Vigo, c'est quoi ? Un assistant que l'on interroge à la voix ou au clavier. Il répond à partir des données de votre entreprise : avancement des chantiers, planning, commandes en retard, rentabilité.
 - Vigo remplace-t-il un logiciel de paye ou de comptabilité ? Non. Vigo prépare les heures et les éléments variables, et se relie à la comptabilité, mais l'établissement des bulletins de paye reste fait par l'entreprise ou son expert-comptable.
 
 ### Trajo

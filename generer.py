@@ -68,7 +68,7 @@ backdrop-filter:blur(8px);border-bottom:1px solid var(--trait)}
 .brand img{height:36px;width:auto}
 .top nav{display:flex;gap:26px;font-weight:600;font-size:15px}
 .top nav a{color:var(--gris)}.top nav a:hover{color:var(--nuit)}
-@media(max-width:640px){.top nav{display:none}}
+@media(max-width:640px){.top nav a:not(.demo){display:none}}
 .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;
 padding:13px 24px;border-radius:12px;border:2px solid transparent;cursor:pointer;transition:.15s}
 .btn-or{background:var(--or);color:#3a2c00}.btn-or:hover{filter:brightness(1.06)}
@@ -167,6 +167,32 @@ display:flex;justify-content:space-between;align-items:center}
 .final{padding:20px 0 76px}.final .box{background:linear-gradient(160deg,var(--accent),#2a2496);
 color:#fff;border-radius:20px;padding:44px 30px;text-align:center}
 .final h2{color:#fff;font-size:26px}.final p{color:#dfe3ff;margin:12px auto 24px;max-width:48ch}
+/* sections de valeur (rentabilite, voix, securite...) */
+.valeurs{padding:20px 0 60px}.valeurs h2{font-size:26px;color:var(--accent);font-weight:800;margin-bottom:8px;text-align:center}
+.valeurs .sous{text-align:center;color:var(--gris);margin-bottom:28px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.vcarte{background:#fff;border:1px solid var(--trait);border-radius:16px;padding:24px;box-shadow:0 4px 18px rgba(16,27,168,.05)}
+.vcarte .ic{font-size:26px;margin-bottom:8px}.vcarte h3{color:var(--nuit);font-size:19px;margin-bottom:8px}
+.vcarte p{color:var(--encre);font-size:15px}.vcarte ul{margin:10px 0 0 18px;color:var(--gris);font-size:14px}
+/* grille de prix */
+.prixsec{background:#fff;border-top:1px solid var(--trait);padding:56px 0}
+.prixsec h2{font-size:26px;color:var(--accent);font-weight:800;text-align:center;margin-bottom:8px}
+.prixsec .sous{text-align:center;color:var(--gris);margin-bottom:26px}
+.gtable{max-width:760px;margin:0 auto;width:100%;border-collapse:collapse;font-size:15px}
+.gtable th,.gtable td{padding:12px 14px;border-bottom:1px solid var(--trait);text-align:left}
+.gtable th{color:var(--nuit);font-weight:800}.gtable td.p{text-align:right;font-weight:800;color:var(--nuit);white-space:nowrap}
+.gtable td small{display:block;color:var(--gris);font-weight:500}
+.gnote{max-width:760px;margin:14px auto 0;color:var(--gris);font-size:13px;text-align:center}
+/* demande de demonstration dans l'en-tete */
+.top .demo{background:var(--or);color:#3a2c00;font-weight:800;font-size:14px;padding:9px 16px;border-radius:10px}
+.top .demo:hover{filter:brightness(1.06)}
+@media(max-width:640px){.top .demo{padding:8px 12px;font-size:13px}}
+/* pages legales */
+.legal{padding:44px 0 70px}.legal .wrap{max-width:820px}
+.legal h1{font-size:32px;color:var(--accent);font-weight:900;margin-bottom:18px}
+.legal h2{font-size:20px;color:var(--nuit);margin:26px 0 8px}.legal p,.legal li{font-size:16px;margin-bottom:8px}
+.legal ul{margin-left:20px}.legal a{color:var(--accent);text-decoration:underline}
+footer.bas .legales{margin-top:6px}
 """.strip()
 
 def shell(titre, desc, canon, jsonld, corps, og_image, keywords=""):
@@ -206,12 +232,13 @@ def shell(titre, desc, canon, jsonld, corps, og_image, keywords=""):
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="index.html"><img src="img/mgapps-logo-officiel.png" alt="MG Apps" onerror="this.style.display='none'">MG Apps</a>
-  <nav><a href="index.html#produits">Produits</a><a href="index.html#pourquoi">Pourquoi MG Apps</a><a href="index.html#contact">Contact</a></nav>
+  <nav><a href="index.html#produits">Produits</a><a href="index.html#pourquoi">Pourquoi MG Apps</a><a href="index.html#contact">Contact</a><a class="demo" href="mailto:{email}?subject=Demande%20de%20d%C3%A9monstration">Demander une d&eacute;monstration</a></nav>
 </div></header>
 {corps}
 <footer class="bas"><div class="wrap">
   <b>MG Apps</b> - Editeur de logiciels - {adr}<br>
   <a href="mailto:{email}">{email}</a> - SIRET {siret}{fb}
+  <div class="legales"><a href="mentions-legales.html">Mentions l&eacute;gales</a> - <a href="confidentialite.html">Politique de confidentialit&eacute;</a></div>
 </div></footer>
 </body>
 </html>""".format(
@@ -235,6 +262,36 @@ ORG = {
 }
 if STE.get("facebook"):
     ORG["sameAs"] = [STE["facebook"]]
+
+# ---------------------------------------------------------------- blocs optionnels d'une page produit
+def blocs_valeur(p):
+    """Cartes de valeur (rentabilite, voix, securite...) : p["sections"] dans site.json."""
+    secs = p.get("sections") or []
+    if not secs:
+        return ""
+    cartes = ""
+    for s in secs:
+        lis = "".join("<li>%s</li>" % e(x) for x in s.get("liste", []))
+        cartes += '<div class="vcarte"><div class="ic">%s</div><h3>%s</h3><p>%s</p>%s</div>' % (
+            s.get("icone", ""), e(s["titre"]), e(s["texte"]), ("<ul>%s</ul>" % lis) if lis else "")
+    titre = e(p.get("sectionsTitre", "Pourquoi %s" % p["nom"]))
+    sous = ('<div class="sous">%s</div>' % e(p["sectionsSous"])) if p.get("sectionsSous") else ""
+    return '<section class="valeurs"><div class="wrap"><h2>%s</h2>%s<div class="vgrid">%s</div></div></section>' % (
+        titre, sous, cartes)
+
+def bloc_grille(p):
+    """Grille de prix publique : p["grille"] = {titre, sous, lignes:[[libelle, detail, prix]], note}."""
+    g = p.get("grille")
+    if not g:
+        return ""
+    lignes = "".join(
+        '<tr><td>%s%s</td><td class="p">%s</td></tr>' % (
+            e(l[0]), ("<small>%s</small>" % e(l[1])) if l[1] else "", e(l[2]))
+        for l in g["lignes"])
+    sous = ('<div class="sous">%s</div>' % e(g["sous"])) if g.get("sous") else ""
+    note = ('<p class="gnote">%s</p>' % e(g["note"])) if g.get("note") else ""
+    return ('<section class="prixsec"><div class="wrap"><h2>%s</h2>%s'
+            '<table class="gtable"><tbody>%s</tbody></table>%s</div></section>') % (e(g["titre"]), sous, lignes, note)
 
 # ---------------------------------------------------------------- page produit
 def page_produit(p):
@@ -291,6 +348,8 @@ def page_produit(p):
   <h2>Ce que fait {nom}</h2><div class="liste">{pts}</div>
 </div></section>
 
+{sections}
+{grille}
 <section class="faq"><div class="wrap">
   <h2>Questions fréquentes sur {nom}</h2><div class="qa">{qa}</div>
 </div></section>
@@ -303,7 +362,7 @@ def page_produit(p):
 </main>
 """.format(logo=e(p["logo"]), nom=e(p["nom"]), acc=e(p["accroche"]), pour=e(p["pour"]),
            desc=e(p["description"]), bouton=bouton, prix=prix, slides=slides, navs=navs,
-           pts=pts, qa=qa, email=e(STE["email"]),
+           pts=pts, qa=qa, email=e(STE["email"]), sections=blocs_valeur(p), grille=bloc_grille(p),
            statut=('<div class="statut">%s</div>' % e(p["statut"])) if p.get("statut") else "",
            aussi=('<p class="aussi">%s</p>' % e(p["aussiPour"])) if p.get("aussiPour") else "",
            orient=orient)
@@ -419,7 +478,8 @@ def robots():
     return "\n".join(lignes)
 
 def sitemap():
-    urls = [DOMAINE + "/"] + [DOMAINE + "/" + p["id"] for p in PRODUITS]
+    urls = [DOMAINE + "/"] + [DOMAINE + "/" + p["id"] for p in PRODUITS] + [
+        DOMAINE + "/mentions-legales", DOMAINE + "/confidentialite"]
     x = ['<?xml version="1.0" encoding="UTF-8"?>',
          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
@@ -450,6 +510,72 @@ def llms():
         t += [""]
     return "\n".join(t)
 
+# ---------------------------------------------------------------- pages legales et 404
+def page_texte(fichier, titre, desc, corps_html, indexer=True):
+    corps = '<main><section class="legal"><div class="wrap">%s</div></section></main>' % corps_html
+    page = shell("%s | MG Apps" % titre, desc, DOMAINE + "/" + fichier.replace(".html", ""),
+                 [ORG], corps, DOMAINE + "/img/mgapps-banniere.png")
+    if not indexer:
+        page = page.replace('<meta name="robots" content="index, follow, max-image-preview:large">',
+                            '<meta name="robots" content="noindex">')
+    return page
+
+def page_mentions():
+    corps = """
+<h1>Mentions légales</h1>
+<h2>Éditeur du site</h2>
+<p><b>MG Apps</b>, entreprise individuelle exploitée par {fond}.<br>
+SIREN 501 976 740 - SIRET {siret} - RCS Dijon 501 976 740<br>
+Établissement : {adr}<br>
+Téléphone : {tel} - E-mail : <a href="mailto:{email}">{email}</a></p>
+<p>Directeur de la publication : {fond}.</p>
+<h2>Hébergement du site</h2>
+<p>Le site www.mgapps.fr est un site statique hébergé par Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis (service Cloudflare Pages).</p>
+<h2>Nos applications</h2>
+<p>Les applications Vigo et Trajo sont des services distincts du présent site, soumis à leurs propres conditions d'utilisation. Les données d'un client de Vigo sont placées dans une base isolée, hébergée en Europe, et traitées dans le cadre d'un accord de sous-traitance conclu avec chaque client.</p>
+<h2>Propriété intellectuelle</h2>
+<p>Les textes, images, logos, noms de produits et captures d'écran présents sur ce site sont la propriété de MG Apps. Toute reproduction sans autorisation écrite est interdite.</p>
+<h2>Responsabilité</h2>
+<p>MG Apps s'efforce de publier des informations exactes et à jour, sans pouvoir garantir l'absence d'erreur. Les liens vers des sites tiers (par exemple Facebook) sont fournis pour information : MG Apps n'est pas responsable de leur contenu.</p>
+<h2>Droit applicable</h2>
+<p>Le présent site est soumis au droit français.</p>
+""".format(fond=e(STE["fondateur"]), siret=e(STE["siret"]), adr=e(STE["adresse"]),
+           tel=e(STE["telephone"]), email=e(STE["email"]))
+    return page_texte("mentions-legales.html", "Mentions légales",
+                      "Mentions légales du site MG Apps : éditeur, hébergeur, propriété intellectuelle.", corps)
+
+def page_confidentialite():
+    corps = """
+<h1>Politique de confidentialité</h1>
+<p>Cette page explique comment MG Apps traite les données personnelles recueillies par le site www.mgapps.fr.</p>
+<h2>Ce site ne dépose aucun cookie</h2>
+<p>Le site est statique : il n'utilise ni cookie, ni outil de mesure d'audience, ni publicité, ni script d'un tiers. Il n'y a donc aucun bandeau de consentement à valider. Comme tout service en ligne, l'hébergeur (Cloudflare) enregistre techniquement l'adresse IP des visiteurs pour assurer la sécurité et le bon fonctionnement du site.</p>
+<h2>Quand vous nous écrivez</h2>
+<ul>
+<li><b>Données traitées :</b> votre adresse e-mail, votre nom et le contenu de votre message.</li>
+<li><b>Finalité :</b> répondre à votre demande (question, démonstration, devis).</li>
+<li><b>Base légale :</b> mesures précontractuelles et intérêt légitime de MG Apps à répondre à ses interlocuteurs.</li>
+<li><b>Durée de conservation :</b> la durée de l'échange, puis au plus 3 ans après le dernier contact si vous n'êtes pas devenu client.</li>
+<li><b>Destinataires :</b> MG Apps uniquement. Vos données ne sont ni vendues, ni cédées.</li>
+</ul>
+<h2>Vos droits</h2>
+<p>Vous pouvez demander l'accès, la rectification, l'effacement ou la limitation du traitement de vos données, et vous opposer à leur utilisation, en écrivant à <a href="mailto:{email}">{email}</a>. Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr).</p>
+<h2>Les données de nos applications</h2>
+<p>Les données saisies dans Vigo ou Trajo par un client sont traitées pour son compte : MG Apps agit alors comme sous-traitant, selon les termes d'un accord de traitement des données remis à chaque client. Chaque entreprise dispose d'une base isolée, hébergée en Europe.</p>
+<h2>Responsable du traitement</h2>
+<p>MG Apps, {fond}, {adr}.</p>
+""".format(email=e(STE["email"]), fond=e(STE["fondateur"]), adr=e(STE["adresse"]))
+    return page_texte("confidentialite.html", "Politique de confidentialité",
+                      "Politique de confidentialité du site MG Apps : aucun cookie, données de contact, droits RGPD.", corps)
+
+def page_404():
+    corps = """
+<h1>Page introuvable</h1>
+<p>Cette adresse n'existe pas ou n'existe plus.</p>
+<p><a href="index.html">Retour à l'accueil de MG Apps</a></p>
+"""
+    return page_texte("404.html", "Page introuvable", "Page introuvable sur le site MG Apps.", corps, indexer=False)
+
 # ---------------------------------------------------------------- ecriture
 def ecrire(nom, contenu):
     with io.open(os.path.join(BASE, nom), "w", encoding="utf-8", newline="\n") as f:
@@ -460,6 +586,9 @@ print("Generation du site MG Apps")
 ecrire("index.html", page_accueil())
 for p in PRODUITS:
     ecrire(p["id"] + ".html", page_produit(p))
+ecrire("mentions-legales.html", page_mentions())
+ecrire("confidentialite.html", page_confidentialite())
+ecrire("404.html", page_404())
 ecrire("robots.txt", robots())
 ecrire("sitemap.xml", sitemap())
 ecrire("llms.txt", llms())

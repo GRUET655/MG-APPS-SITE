@@ -10,9 +10,22 @@
     "fondateur": "Jerome Gruet",
     "facebook": "https://www.facebook.com/profile.php?id=61591131750401",
     "pitch": "MG Apps conçoit des logiciels métier simples, nés dans une vraie entreprise du bâtiment. Chaque application résout un problème concret du terrain, s'utilise depuis un téléphone comme depuis un ordinateur, et garde vos données isolées et hébergées en Europe.",
-    "botsIA": ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Web", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Bytespider", "Meta-ExternalAgent"]
+    "botsIA": [
+      "GPTBot",
+      "OAI-SearchBot",
+      "ChatGPT-User",
+      "ClaudeBot",
+      "Claude-Web",
+      "anthropic-ai",
+      "PerplexityBot",
+      "Perplexity-User",
+      "Google-Extended",
+      "Applebot-Extended",
+      "CCBot",
+      "Bytespider",
+      "Meta-ExternalAgent"
+    ]
   },
-
   "produits": [
     {
       "id": "vigo",
@@ -23,7 +36,20 @@
       "categorie": "Logiciel de gestion pour le bâtiment",
       "pour": "Menuisiers, artisans et entreprises du bâtiment",
       "aussiPour": "Pensé pour les menuisiers, charpentiers, électriciens, plombiers chauffagistes et toutes les entreprises du bâtiment, adhérentes CAPEB ou FFB.",
-      "motsCles": ["logiciel bâtiment", "gestion entreprise du bâtiment", "artisan", "menuisier", "charpentier", "électricien", "plombier chauffagiste", "devis de chantier", "CAPEB", "FFB", "comptable", "cabinet comptable"],
+      "motsCles": [
+        "logiciel bâtiment",
+        "gestion entreprise du bâtiment",
+        "artisan",
+        "menuisier",
+        "charpentier",
+        "électricien",
+        "plombier chauffagiste",
+        "devis de chantier",
+        "CAPEB",
+        "FFB",
+        "comptable",
+        "cabinet comptable"
+      ],
       "tarif": "À partir de 129 € par mois",
       "prixValeur": "129",
       "statut": "Lancement prochain",
@@ -31,40 +57,144 @@
       "texteBouton": "Demander une démonstration",
       "seoTitle": "Vigo, logiciel de gestion et de pilotage pour le bâtiment | MG Apps",
       "seoDesc": "Vigo réunit devis, chantiers, planning, heures et pilotage de la marge dans un seul logiciel simple, pensé pour les menuisiers et les artisans du bâtiment. À partir de 129 € par mois.",
-      "description": "Vigo réunit dans un seul outil tout ce qui fait tourner une entreprise du bâtiment : les clients, les devis, les chantiers, le planning et les heures des équipes. Ne s'active que ce qui sert, module par module, et tout se retrouve relié de bout en bout.",
+      "description": "Vigo réunit dans un seul outil ce qui fait tourner une entreprise du bâtiment : les clients, les chantiers, le planning, les heures des équipes et le pilotage de la marge. Il se relie à votre logiciel de devis et de facturation au lieu de le remplacer, et ne s'active que ce qui sert, module par module.",
       "points": [
-        "Clients, devis et chantiers reliés de bout en bout",
-        "Planning des équipes de fabrication et de pose",
+        "Clients, chantiers et planning reliés de bout en bout",
         "Heures des salariés et préparation de la paye",
         "Interventions après-vente, du signalement à la signature",
-        "Pilotage : savoir si on gagne de l'argent, chantier par chantier",
+        "Pilotage : savoir si on gagne de l'argent, chantier par chantier et par heure",
+        "Assistant Vigo : posez une question à la voix, il répond avec vos chiffres",
         "Fonctionne sur ordinateur, tablette et téléphone, sans installation"
       ],
       "faq": [
         {
           "q": "À qui s'adresse Vigo ?",
-          "a": "Vigo est conçu pour les menuisiers, les artisans et les petites entreprises du bâtiment qui veulent gérer devis, chantiers, planning et heures sans multiplier les outils."
+          "a": "Vigo est conçu pour les menuisiers, les artisans et les petites entreprises du bâtiment qui veulent suivre leurs chantiers, leur planning, leurs heures et leur rentabilité sans multiplier les outils."
+        },
+        {
+          "q": "Vigo fait-il les devis et les factures ?",
+          "a": "Non. Vigo se relie à votre logiciel de devis et de facturation et en reprend les chiffres pour suivre la rentabilité. Vous gardez votre outil habituel, Vigo fait le lien avec le terrain."
         },
         {
           "q": "Combien coûte Vigo ?",
-          "a": "L'abonnement démarre à 129 € par mois pour le socle et trois utilisateurs. Des modules optionnels (documents, communication, stock, pilotage, interventions, assistant IA, pôle RH) s'ajoutent à la carte."
+          "a": "Le socle démarre à 129 € HT par mois avec trois utilisateurs, avec engagement annuel (149 € sans engagement). Des modules s'ajoutent à la carte. Le détail est dans la grille de tarifs de cette page."
         },
         {
           "q": "Faut-il installer un logiciel ?",
-          "a": "Non. Vigo s'utilise depuis un navigateur, sur ordinateur, tablette et téléphone, et fonctionne même sans connexion pour les fonctions de terrain. Rien à installer."
+          "a": "Non. Vigo s'utilise depuis un navigateur, sur ordinateur, tablette et téléphone. Certaines fonctions de consultation restent disponibles sans connexion."
         },
         {
-          "q": "Où sont hébergées les données ?",
-          "a": "Chaque entreprise cliente dispose d'une base de données isolée, hébergée en Europe. Les données ne sont ni vendues, ni mélangées avec celles d'un autre client."
+          "q": "Où sont hébergées mes données, et sont-elles protégées ?",
+          "a": "Chaque entreprise dispose d'une base de données isolée, hébergée en Europe, avec des droits d'accès par rôle et un historique des actions. Les données ne sont ni vendues ni mélangées avec celles d'un autre client."
+        },
+        {
+          "q": "Comment se passe la mise en service ?",
+          "a": "Nous reprenons vos clients et vos chantiers, paramétrons Vigo à votre façon et formons vos équipes. Une mise en route accompagnée est facturée une fois, selon l'ampleur de la reprise."
+        },
+        {
+          "q": "L'assistant Vigo, c'est quoi ?",
+          "a": "Un assistant que l'on interroge à la voix ou au clavier. Il répond à partir des données de votre entreprise : avancement des chantiers, planning, commandes en retard, rentabilité."
         },
         {
           "q": "Vigo remplace-t-il un logiciel de paye ou de comptabilité ?",
           "a": "Non. Vigo prépare les heures et les éléments variables, et se relie à la comptabilité, mais l'établissement des bulletins de paye reste fait par l'entreprise ou son expert-comptable."
         }
       ],
-      "captures": ["img/vigo-1.jpg", "img/vigo-2.jpg", "img/vigo-3.jpg", "img/vigo-4.jpg"]
+      "captures": [
+        "img/vigo-1.jpg",
+        "img/vigo-2.jpg",
+        "img/vigo-3.jpg",
+        "img/vigo-4.jpg"
+      ],
+      "sectionsTitre": "Ce que Vigo change au quotidien",
+      "sectionsSous": "Pas un tableau de bord de plus : un outil qui répond aux questions du patron.",
+      "sections": [
+        {
+          "icone": "📈",
+          "titre": "Savoir si vous gagnez de l'argent",
+          "texte": "Marge par chantier, marge par heure, point mort et objectifs de l'exercice, calculés à partir de vos vraies heures et de vos vrais achats.",
+          "liste": [
+            "Devis prévu contre réel",
+            "Alerte quand un chantier dérape"
+          ]
+        },
+        {
+          "icone": "🎙️",
+          "titre": "Un assistant qui connaît votre entreprise",
+          "texte": "Demandez à Vigo, à la voix ou au clavier : où en est tel chantier, qui est disponible jeudi, quelles commandes sont en retard. Chaque matin, un point du jour résume l'essentiel.",
+          "liste": [
+            "Répond avec vos chiffres, pas avec du général",
+            "Point du jour en début de journée"
+          ]
+        },
+        {
+          "icone": "🔒",
+          "titre": "Vos données restent les vôtres",
+          "texte": "Chaque entreprise a sa propre base, isolée des autres et hébergée en Europe. Rien n'est vendu ni mélangé.",
+          "liste": [
+            "Droits d'accès par rôle",
+            "Chacun choisit son mot de passe",
+            "Historique des actions"
+          ]
+        },
+        {
+          "icone": "🤝",
+          "titre": "Une mise en route accompagnée",
+          "texte": "Reprise de vos clients et de vos chantiers, paramétrage de vos listes, prise en main avec vos équipes. Vous n'êtes pas laissé seul devant un outil vide.",
+          "liste": [
+            "Reprise de vos données existantes",
+            "Formation de vos équipes"
+          ]
+        }
+      ],
+      "grille": {
+        "titre": "Des tarifs clairs",
+        "sous": "Un socle, des modules à la carte, aucune surprise. Tarifs HT, TVA en sus.",
+        "lignes": [
+          [
+            "Socle Vigo",
+            "Clients, chantiers, planning, heures, 3 utilisateurs inclus. Engagement annuel.",
+            "129 € par mois"
+          ],
+          [
+            "Socle Vigo, sans engagement",
+            "Mêmes fonctions, résiliable à tout moment.",
+            "149 € par mois"
+          ],
+          [
+            "Utilisateur supplémentaire",
+            "Au-delà des 3 inclus.",
+            "12 € par mois"
+          ],
+          [
+            "Module Documents, Outils et communication, Assistant IA, SAV et entretien, Stock",
+            "Chaque module, au choix.",
+            "25 € par mois"
+          ],
+          [
+            "Module Pilotage",
+            "Rentabilité, marge, point mort.",
+            "35 € par mois"
+          ],
+          [
+            "Pôle RH",
+            "Pack heures, absences, contrats.",
+            "39 € par mois"
+          ],
+          [
+            "Options TVA et OD salaires",
+            "Chaque option.",
+            "12 € par mois"
+          ],
+          [
+            "Mise en route",
+            "Selon l'ampleur de la reprise de vos données.",
+            "de 490 à 1 490 €"
+          ]
+        ],
+        "note": "Le prix exact dépend des modules choisis. Demandez une démonstration pour un chiffrage sur mesure."
+      }
     },
-
     {
       "id": "trajo",
       "nom": "Trajo",
@@ -74,7 +204,17 @@
       "categorie": "Calculateur de frais de déplacement pour les professions à domicile",
       "pour": "Professionnels libéraux en honoraires libres qui se déplacent au domicile de leurs clients",
       "aussiPour": "Pédicures-podologues, coiffeurs et coiffeuses à domicile, et toute profession libérale qui fixe librement ses honoraires et se déplace chez ses clients.",
-      "motsCles": ["frais de déplacement", "indemnité kilométrique", "profession libérale", "honoraires libres", "pédicure-podologue", "podologue", "pédicure", "coiffeur à domicile", "coiffeuse à domicile"],
+      "motsCles": [
+        "frais de déplacement",
+        "indemnité kilométrique",
+        "profession libérale",
+        "honoraires libres",
+        "pédicure-podologue",
+        "podologue",
+        "pédicure",
+        "coiffeur à domicile",
+        "coiffeuse à domicile"
+      ],
       "tarif": "49 € par an",
       "prixValeur": "49",
       "lienAppli": "https://trajo.pages.dev",
@@ -108,7 +248,12 @@
           "a": "Trajo coûte 49 € par an, tout compris, sans engagement caché."
         }
       ],
-      "captures": ["img/trajo-1.png", "img/trajo-2.png", "img/trajo-3.png", "img/trajo-4.png"]
+      "captures": [
+        "img/trajo-1.png",
+        "img/trajo-2.png",
+        "img/trajo-3.png",
+        "img/trajo-4.png"
+      ]
     }
   ]
 }
