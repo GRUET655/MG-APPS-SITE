@@ -4,7 +4,6 @@
     "baseline": "Des logiciels de gestion et de pilotage pensés pour les pros du terrain",
     "domaine": "https://www.mgapps.fr",
     "email": "contact@mgapps.fr",
-    "telephone": "06 32 93 10 17",
     "adresse": "44 avenue Edouard Herriot, 21400 Chatillon-sur-Seine, France",
     "siret": "501 976 740 00040",
     "fondateur": "Jerome Gruet",
@@ -24,7 +23,9 @@
       "CCBot",
       "Bytespider",
       "Meta-ExternalAgent"
-    ]
+    ],
+    "instagram": "",
+    "linkedin": ""
   },
   "produits": [
     {

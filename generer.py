@@ -45,11 +45,23 @@ FB_SVG = ('<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" a
           'v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97'
           'h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07"/></svg>')
 
+IG_SVG = ('<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">'
+          '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>')
+LI_SVG = ('<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">'
+          '<path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.54h.05c.53-1 1.82-2.04 3.75-2.04 4 0 4.75 2.63 4.75 6.05V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.32-1.96 2.69V21h-4z"/></svg>')
+
+def boutons_reseaux():
+    out = ""
+    if STE.get("facebook"):
+        out += '<a class="btn-fb" href="%s" target="_blank" rel="noopener">%s Facebook</a>' % (e(STE["facebook"]), FB_SVG)
+    if STE.get("instagram"):
+        out += '<a class="btn-fb btn-ig" href="%s" target="_blank" rel="noopener">%s Instagram</a>' % (e(STE["instagram"]), IG_SVG)
+    if STE.get("linkedin"):
+        out += '<a class="btn-fb btn-li" href="%s" target="_blank" rel="noopener">%s LinkedIn</a>' % (e(STE["linkedin"]), LI_SVG)
+    return out
+
 def bouton_fb():
-    if not STE.get("facebook"):
-        return ""
-    return ('<a class="btn-fb" href="%s" target="_blank" rel="noopener">%s Suivez-nous sur Facebook</a>'
-            % (e(STE["facebook"]), FB_SVG))
+    return boutons_reseaux()
 
 # ---------------------------------------------------------------- styles
 CSS = """
@@ -112,7 +124,7 @@ border-radius:20px;padding:48px 30px;text-align:center}
 .contact .liens{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
 .btn-fb{display:inline-flex;align-items:center;gap:9px;background:#1877F2;color:#fff;font-weight:700;
 font-size:16px;padding:13px 22px;border-radius:12px;border:2px solid transparent;transition:.15s}
-.btn-fb:hover{filter:brightness(1.08)}.btn-fb svg{flex:0 0 auto}
+.btn-ig{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)}.btn-li{background:#0A66C2}.btn-fb:hover{filter:brightness(1.08)}.btn-fb svg{flex:0 0 auto}
 footer.bas{padding:34px 0;color:var(--gris);font-size:14px;text-align:center;border-top:1px solid var(--trait)}
 footer.bas b{color:var(--nuit)}footer.bas a{color:var(--nuit)}
 /* page produit */
@@ -245,8 +257,8 @@ def shell(titre, desc, canon, jsonld, corps, og_image, keywords=""):
         titre=e(titre), desc=e(desc), canon=e(canon), og=e(og_image), kwmeta=kwmeta,
         css=CSS, blocs=blocs, corps=corps,
         adr=e(STE["adresse"]), email=e(STE["email"]), siret=e(STE["siret"]),
-        fb=(' - <a href="%s" target="_blank" rel="noopener">Facebook</a>' % e(STE["facebook"]))
-           if STE.get("facebook") else "",
+        fb="".join(' - <a href="%s" target="_blank" rel="noopener">%s</a>' % (e(STE[k]), n)
+                      for k, n in (("facebook", "Facebook"), ("instagram", "Instagram"), ("linkedin", "LinkedIn")) if STE.get(k)),
     )
 
 # ---------------------------------------------------------------- JSON-LD communs
@@ -254,14 +266,15 @@ ORG = {
     "@context": "https://schema.org", "@type": "Organization",
     "name": STE["nom"], "url": DOMAINE + "/",
     "logo": DOMAINE + "/img/mgapps-logo-officiel.png",
-    "email": STE["email"], "telephone": STE["telephone"],
+    "email": STE["email"],
     "founder": {"@type": "Person", "name": STE["fondateur"]},
     "address": {"@type": "PostalAddress", "streetAddress": "44 avenue Edouard Herriot",
                 "postalCode": "21400", "addressLocality": "Chatillon-sur-Seine", "addressCountry": "FR"},
     "description": STE["pitch"],
 }
-if STE.get("facebook"):
-    ORG["sameAs"] = [STE["facebook"]]
+_sa = [STE[k] for k in ("facebook", "instagram", "linkedin") if STE.get(k)]
+if _sa:
+    ORG["sameAs"] = _sa
 
 # ---------------------------------------------------------------- blocs optionnels d'une page produit
 def blocs_valeur(p):
@@ -448,7 +461,7 @@ def page_accueil():
 
 <section class="sec contact" id="contact"><div class="wrap"><div class="box">
   <h2>Une question, une démonstration ?</h2>
-  <p>Écrivez-nous, on répond vite et sans jargon. Suivez aussi nos actualités sur Facebook.</p>
+  <p>Écrivez-nous, on répond vite et sans jargon. Suivez aussi nos actualités sur les réseaux.</p>
   <div class="liens"><a class="btn btn-or" href="mailto:{email}">{email}</a>{fb}</div>
 </div></div></section>
 </main>
@@ -527,7 +540,7 @@ def page_mentions():
 <p><b>MG Apps</b>, entreprise individuelle exploitée par {fond}.<br>
 SIREN 501 976 740 - SIRET {siret} - RCS Dijon 501 976 740<br>
 Établissement : {adr}<br>
-Téléphone : {tel} - E-mail : <a href="mailto:{email}">{email}</a></p>
+E-mail : <a href="mailto:{email}">{email}</a></p>
 <p>Directeur de la publication : {fond}.</p>
 <h2>Hébergement du site</h2>
 <p>Le site www.mgapps.fr est un site statique hébergé par Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis (service Cloudflare Pages).</p>
@@ -540,7 +553,7 @@ Téléphone : {tel} - E-mail : <a href="mailto:{email}">{email}</a></p>
 <h2>Droit applicable</h2>
 <p>Le présent site est soumis au droit français.</p>
 """.format(fond=e(STE["fondateur"]), siret=e(STE["siret"]), adr=e(STE["adresse"]),
-           tel=e(STE["telephone"]), email=e(STE["email"]))
+           email=e(STE["email"]))
     return page_texte("mentions-legales.html", "Mentions légales",
                       "Mentions légales du site MG Apps : éditeur, hébergeur, propriété intellectuelle.", corps)
 
